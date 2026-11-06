@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض أعمالي | تصميم وتطوير مواقع الويب</title>
+  <meta name="description" content="معرض أعمال — مواقع وتجارب ويب عربية صُممت بعناية: سيرة ذاتية رقمية، متجر عطور فاخرة، عرض تقديمي تفاعلي، ومتجر سيارات أطفال.">
+
+  <!-- الخطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>✦</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- توهّج يتبع المؤشر -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- زخارف الخلفية -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="bg-grid"></span>
+  </div>
+
+  <!-- ===== التنقل ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="التنقل الرئيسي">
+      <a href="#home" class="logo">معرض<span> أعمالي</span><i class="logo-dot" aria-hidden="true"></i></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#works" class="nav-item">الأعمال</a></li>
+        <li><a href="#process" class="nav-item">منهجيتي</a></li>
+        <li><a href="#about" class="nav-item">نبذة</a></li>
+        <li>
+          <a class="nav-cta" href="https://wa.me/966533252029" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.48 1.34 5L2 22l5.16-1.35a9.9 9.9 0 0 0 4.88 1.28c5.5 0 9.98-4.48 9.98-9.98S17.54 2 12.04 2Zm5.83 14.1c-.24.68-1.4 1.3-1.93 1.35-.53.06-1.02.24-2.9-.6-2.28-1.02-3.72-3.4-3.83-3.56-.11-.16-.9-1.2-.9-2.3 0-1.08.57-1.62.77-1.84.2-.22.44-.28.6-.28l.43.01c.14 0 .32-.05.5.38.18.44.63 1.55.68 1.66.05.11.09.24.02.39-.08.15-.12.24-.23.37-.12.14-.24.3-.35.4-.11.12-.24.25-.1.49.14.24.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.6-.18 1.28Z"/></svg>
+            تواصل
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== البطل ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <span class="hero-badge reveal">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            معرض الأعمال · تصميم وتطوير الويب
+          </span>
+
+          <h1 class="reveal">
+            أحوّل الأفكار إلى
+            <span class="rotator" id="rotator">
+              <span class="rot-word is-active" style="--c:#7a5cf0">مواقع تُشبه صاحبها</span>
+              <span class="rot-word" style="--c:#c29a2b">هويات تُميّزها</span>
+              <span class="rot-word" style="--c:#0fb5a4">تجارب تُحكى</span>
+              <span class="rot-word" style="--c:#d64ec6">تفاصيل تُفرح</span>
+            </span>
+          </h1>
+
+          <p class="hero-sub reveal">
+            كل مشروع هنا بدأ كفكرة على ورق، وانتهى كواجهة حيّة على الإنترنت.
+            أربعة مواقع، أربعة عوالم مختلفة — بسيرة ذاتية، عطور فاخرة، قصة إنسانية، ومتجر يُضحك الأطفال.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#works" class="btn btn-primary">استعرض المعرض <span aria-hidden="true">↓</span></a>
+            <a href="#contact" class="btn btn-outline">لإقلاع موقعك القادم</a>
+          </div>
+
+          <dl class="hero-stats reveal">
+            <div><dt>04</dt><dd>مواقع حيّة</dd></div>
+            <div><dt>04</dt><dd>مجالات مختلفة</dd></div>
+            <div><dt>100%</dt><dd>صنع يدوي وعنا</dd></div>
+          </dl>
+        </div>
+
+        <!-- بطاقة تذكارية عائمة -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-collage">
+            <figure class="mini-card mini-1"><img src="images/atyaf.jpeg" alt=""></figure>
+            <figure class="mini-card mini-2"><img src="images/marah.jpeg" alt=""></figure>
+            <figure class="mini-card mini-3"><img src="images/sumayah.jpeg" alt=""></figure>
+            <figure class="mini-card mini-4"><img src="images/sumayhh.jpeg" alt=""></figure>
+            <span class="hero-tag tag-1">🚗 متجر</span>
+            <span class="hero-tag tag-2">✦ سيرة ذاتية</span>
+            <span class="hero-tag tag-3">☾ عرض تقديمي</span>
+            <span class="hero-tag tag-4">✧ متجر فاخر</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#works" aria-label="الانتقال إلى الأعمال">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== شريط متحرك ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>واجهات عربية <i>✦</i></span>
+        <span>تصميم متجاوب <i>✦</i></span>
+        <span>وضع ليلي <i>✦</i></span>
+        <span>تجربة مستخدم <i>✦</i></span>
+        <span>HTML &amp; CSS &amp; JS <i>✦</i></span>
+        <span>أداء خفيف <i>✦</i></span>
+        <span>هوية بصرية <i>✦</i></span>
+        <span>حركة وتفاعل <i>✦</i></span>
+        <!-- نسخة مكررة للحركة المستمرة -->
+        <span>واجهات عربية <i>✦</i></span>
+        <span>تصميم متجاوب <i>✦</i></span>
+        <span>وضع ليلي <i>✦</i></span>
+        <span>تجربة مستخدم <i>✦</i></span>
+        <span>HTML &amp; CSS &amp; JS <i>✦</i></span>
+        <span>أداء خفيف <i>✦</i></span>
+        <span>هوية بصرية <i>✦</i></span>
+        <span>حركة وتفاعل <i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- ===== الأعمال ===== -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">المعرض</span>
+          <h2>أربعة عوالم… <em>كل واحد بروح مختلفة</em></h2>
+          <p>مرّر المؤشر فوق أي عمل لتشفوفه من الداخل، أو اضغط لزيارة الموقع الحيّ.</p>
+        </div>
+
+        <div class="works-grid">
+
+          <!-- ١) أطياف -->
+          <article class="work-card reveal" style="--accent:#c29a2b; --accent-soft:#f7efdb" data-tilt>
+            <a class="work-links" href="https://atyaf.soosoo-ab22.workers.dev/" target="_blank" rel="noopener" aria-label="زيارة موقع أطياف">
+              <span class="work-num" aria-hidden="true">٠١</span>
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span class="address" dir="ltr">atyaf.soosoo-ab22.workers.dev</span>
+                </div>
+                <div class="shot-wrap">
+                  <img src="images/atyaf.jpeg" alt="واجهة موقع أطياف لمتجر العطور" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>أطياف</h3>
+                <span class="work-kind">متجر عطور فاخرة · الرياض</span>
+              </div>
+              <p>
+                واجهة فاخرة بهوية ذهبية توازن بين فخامة العطور الشرقية وبساطة التصفح؛
+                معرض صور، آراء عملاء، وزر واتساب عائم — مع نسخة إنجليزية كاملة.
+              </p>
+              <ul class="work-chips">
+                <li>هوية ذهبية</li>
+                <li>نسخة EN</li>
+                <li>معرض وصور</li>
+                <li>RTL كامل</li>
+              </ul>
+              <a class="work-link" href="https://atyaf.soosoo-ab22.workers.dev/" target="_blank" rel="noopener">
+                زيارة الموقع <span aria-hidden="true">↖</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- ٢) سميه — سيرة ذاتية -->
+          <article class="work-card reveal" style="--accent:#7a5cf0; --accent-soft:#ece8fc" data-tilt>
+            <a class="work-links" href="https://sumayah.soosoo-ab22.workers.dev/" target="_blank" rel="noopener" aria-label="زيارة موقع السيرة الذاتية">
+              <span class="work-num" aria-hidden="true">٠٢</span>
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span class="address" dir="ltr">sumayah.soosoo-ab22.workers.dev</span>
+                </div>
+                <div class="shot-wrap">
+                  <img src="images/sumayah.jpeg" alt="واجهة موقع السيرة الذاتية الرقمية" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>سميه عبدالله سنان</h3>
+                <span class="work-kind">سيرة ذاتية رقمية</span>
+              </div>
+              <p>
+                سيرة ذاتية حيّة لطالبة علم بيانات وذكاء اصطناعي؛ خط عربي أنيق،
+                وضع ليلي بضغطة زر، وتنظيم واضح للمهارات والخبرات — مع زر تحميل PDF.
+              </p>
+              <ul class="work-chips">
+                <li>وضع ليلي 🌙</li>
+                <li>تحميل PDF</li>
+                <li>خط El Messiri</li>
+                <li>قابل للطباعة</li>
+              </ul>
+              <a class="work-link" href="https://sumayah.soosoo-ab22.workers.dev/" target="_blank" rel="noopener">
+                زيارة الموقع <span aria-hidden="true">↖</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- ٣) العرض التقديمي -->
+          <article class="work-card reveal" style="--accent:#0fb5a4; --accent-soft:#dcf5f1" data-tilt>
+            <a class="work-links" href="https://sumayhh.soosoo-ab22.workers.dev/" target="_blank" rel="noopener" aria-label="زيارة العرض التقديمي التفاعلي">
+              <span class="work-num" aria-hidden="true">٠٣</span>
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span class="address" dir="ltr">sumayhh.soosoo-ab22.workers.dev</span>
+                </div>
+                <div class="shot-wrap">
+                  <img src="images/sumayhh.jpeg" alt="الشريحة الافتاحية من العرض التقديمي التفاعلي" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>هل نحن متصلون أكثر.. أم أكثر وحدة؟</h3>
+                <span class="work-kind">عرض تقديمي تفاعلي · 10 شرائح</span>
+              </div>
+              <p>
+                عرض تفاعلي كامل عن الصحة العقلية في عصر السوشيال ميديا؛
+                تنقّل بلوحة المفاتيح والمسافة، شريط تقدّم، وعدّاد شرائح — كل ذلك بمكوّنات الويب فقط.
+              </p>
+              <ul class="work-chips">
+                <li>10 شرائح</li>
+                <li>تنقّل بالمفاتيح</li>
+                <li>شريط تقدّم</li>
+                <li>سياق إنساني</li>
+              </ul>
+              <a class="work-link" href="https://sumayhh.soosoo-ab22.workers.dev/" target="_blank" rel="noopener">
+                زيارة العرض <span aria-hidden="true">↖</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- ٤) مَرَح -->
+          <article class="work-card reveal" style="--accent:#d64ec6; --accent-soft:#fbe4f7" data-tilt>
+            <a class="work-links" href="https://car.soosoo-ab22.workers.dev/" target="_blank" rel="noopener" aria-label="زيارة موقع مرح لسيارات الأطفال">
+              <span class="work-num" aria-hidden="true">٠٤</span>
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span class="address" dir="ltr">car.soosoo-ab22.workers.dev</span>
+                </div>
+                <div class="shot-wrap">
+                  <img src="images/marah.jpeg" alt="واجهة موقع مرح لسيارات الأطفال" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>«مَرَح»</h3>
+                <span class="work-kind">متجر سيارات أطفال · الرياض</span>
+              </div>
+              <p>
+                متجر بهوية مرحة تُلامس صغيرها؛ شريط صور متحرك لا يتوقف، معارض تتخلط
+                بأمر عشوائي في كل زيارة، وآراء أهالٍ — فرحٌ حقيقي بلغة الويب.
+              </p>
+              <ul class="work-chips">
+                <li>شريط متحرك</li>
+                <li>خلع عشوائي للصور</li>
+                <li>أزرار واتساب</li>
+                <li>روح الأطفال</li>
+              </ul>
+              <a class="work-link" href="https://car.soosoo-ab22.workers.dev/" target="_blank" rel="noopener">
+                زيارة الموقع <span aria-hidden="true">↖</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== نبذة ===== -->
+    <section class="section about" id="about">
+      <div class="container about-card reveal">
+        <div class="about-mark" aria-hidden="true">✦</div>
+        <div>
+          <span class="kicker">فلسفة التصميم</span>
+          <h2>تفاصيل صغيرة… تصنع فرقًا كبيرًا</h2>
+          <p>
+            أؤمن أن الموقع الجيد ليس أجمل واجهة فحسب؛ بل أسرع وأضعف ملفًا، أريح عينًا،
+            وأوضح رسالة. لذلك كل عمل هنا بُني بخطوط عربية هادئة، ألوان من روح المشروع،
+            وحرص ألا يكون شيئًا فيه بلا داع.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== منهجية العمل ===== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">منهجيتي</span>
+          <h2>من الفكرة… <em>إلى الإنترنت</em></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--accent:#7a5cf0">
+            <span class="step-num">٠١</span>
+            <h3>الفهم والهوية</h3>
+            <p>نحدّد الجمهور والرسالة، ونختار الألوان والخطوط التي تُشبه المشروع لا صاحبه فقط.</p>
+          </li>
+          <li class="step reveal" style="--accent:#c29a2b">
+            <span class="step-num">٠٢</span>
+            <h3>التصميم</h3>
+            <p>واجهات من الرسائل الأولى حتى التذييل، مع مساحات تتنفس وفقرة واحدة تصحّ.</p>
+          </li>
+          <li class="step reveal" style="--accent:#0fb5a4">
+            <span class="step-num">٠٣</span>
+            <h3>البناء والتفاعل</h3>
+            <p>كود نظيف سريع، حركة هادئة تخدم التصفح، وتجربة تشتغل على الجوال أولًا.</p>
+          </li>
+          <li class="step reveal" style="--accent:#d64ec6">
+            <span class="step-num">٠٤</span>
+            <h3>الإطلاق والتكملة</h3>
+            <p>نشر حيّ على الإنترنت، قياس الأثر، وتطويرات صغيرة تعطي موقعك عمرًا طويلًا.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== دعوة التواصل ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <span class="kicker">الخطوة التالية</span>
+          <h2>هل لديك فكرة تستحق موقعًا؟</h2>
+          <p>
+            سواء كانت سيرة ذاتية، متجرًا، عرضًا تفاعليًا… أو فكرة لم تسمّاها بعد —
+            يسعدني أن أشارك في إقلاعها.
+          </p>
+          <div class="contact-actions">
+            <a class="whatsapp-btn" href="https://wa.me/966533252029" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.48 1.34 5L2 22l5.16-1.35a9.9 9.9 0 0 0 4.88 1.28c5.5 0 9.98-4.48 9.98-9.98S17.54 2 12.04 2Zm5.83 14.1c-.24.68-1.4 1.3-1.93 1.35-.53.06-1.02.24-2.9-.6-2.28-1.02-3.72-3.4-3.83-3.56-.11-.16-.9-1.2-.9-2.3 0-1.08.57-1.62.77-1.84.2-.22.44-.28.6-.28l.43.01c.14 0 .32-.05.5.38.18.44.63 1.55.68 1.66.05.11.09.24.02.39-.08.15-.12.24-.23.37-.12.14-.24.3-.35.4-.11.12-.24.25-.1.49.14.24.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.6-.18 1.28Z"/></svg>
+              تواصل عبر واتساب
+              <span dir="ltr">0533252029</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== التذييل ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo footer-logo">معرض<span> أعمالي</span><i class="logo-dot" aria-hidden="true"></i></a>
+      <p class="footer-line">أربعة عوالم على الإنترنت… وأكثر قادمة.</p>
+      <p>© <span id="currentYear"></span> جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
